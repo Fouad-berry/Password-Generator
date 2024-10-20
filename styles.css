@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+body {
+    background-color: #F2EFEE;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px ;
+}
+.box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.box .title {
+    padding: 1rem;
+    background-color: #0071C5;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 500;
+}
+.box .container {
+    padding: 2rem 1rem;
+}
+.box .container .result {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    padding: 5px;
+}
+.box .container .result input {
+    padding: .5rem;
+    height: 53px;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 80%;
+    background-color: transparent;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.box .container .result button {
+    height: 53px;
+    color: #fff;
+    background-color: #0071C5;
+    border: transparent;
+    border-radius: 5px;
+    width: 18%;
+    cursor: pointer;
+}
+.box .container .bx .sr {
+    width: 90%;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.box .container .bx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.box .container .bx input:not([type="checkbox"]) {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+.box .container .bx h4 {
+    color: #333;
+}
+.box .container .bx input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    width: 60px;
+    cursor: pointer;
+    height: 30px;
+    background-color: rgb(244 67 54 / 80%);
+    transition: .3s linear;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 60px;
+}
+.box .container .bx input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.box .container .bx input[type="checkbox"]:checked:before {
+    transform: translateX(38px) translateY(-50%);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+} 
+.box .container .bx input[type="checkbox"]:checked {
+    background-color: #73CE8C;
+}
+.box .container > button {
+    width: 100%;
+    background-color: #0071C5;
+    color: #fff;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 5px;
+    border: transparent;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.box .container > button:hover {
+    background-color: #3F51B5;
+}
+@media (max-width:590px) {
+    .box .container {
+        padding: 2rem 0.5rem;
+    }
+    .box .container .bx input:not([type="checkbox"]) {
+        width: 120px;
+    }
+    .box .container .result input {
+        width: 70%;
+    }
+    .box .container .result button {
+        width: 28%;
+    }
+}
+
+.language-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    }
+    
+    .language-container label {
+        margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    
+    .language-select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    appearance: none;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="grey" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    }
+    
+    .language-select option {
+    padding: 10px;
+    font-size: 16px;
+    }
+    
+    .language-select option:before {
+    content: "🇫🇷";
+    }
+    
+    .language-container select {
+    padding: 10px 40px 10px 10px;
+    margin-top:10px;
+    }
+    
+    .language-select:hover,
+    .language-select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    
